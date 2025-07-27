@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.vnt {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+.grandeimg img {
+width: 100%;
+height: 300px;
+
+}
+
+.grid-autos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.auto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.auto:hover {
+  transform: scale(1.03);
+}
+
+.auto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.auto h3 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.auto p {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.auto button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auto button:hover {
+  background-color: #004b99;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Formulario Agregar Auto */
+#agregar-auto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#formAuto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formAuto input, #formAuto button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#formAuto button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#formAuto button:hover {
+  background-color: #004b99;
+}
+
+
+
+
+/* AQUI ES EL DISEÑO RESPON 
+Tablet (786px - 1023px): mostrar solo 2 autos por fila */
+@media screen and (max-width: 1023px) and (min-width: 786px) {
+  .grid-autos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .auto img {
+    height: 160px;
+  }
+}
+
+/* Móvil (≤ 768px): una columna, todo vertical */
+@media screen and (max-width: 768px) {
+  .grid-autos {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .auto img {
+    height: 180px;
+  }
+  .grandeimg img{
+    margin-bottom: 20px;
+    height: 200px;
+  }
+  #agregar-auto {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+}

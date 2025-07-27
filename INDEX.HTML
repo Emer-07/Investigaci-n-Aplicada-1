@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autos en Venta</title>
+  <link rel="stylesheet" href="CSS/STYLO.CSS">
+</head>
+<body>
+  <header>
+    <h1>Concesionario El Buen Auto</h1>
+    <p>Los mejores vehículos a tu alcance</p>
+  </header>
+
+  <main>
+    <section class="galeria-autos">
+      <div class="grandeimg">
+         <img src="img/slaiderj.jpg" alt="Auto 1" />
+
+      </div>
+      <h1 class="vnt">Carros en Venta</h1>
+      <div class="grid-autos">
+        <div class="auto">
+          <img src="img/auto.jpg" alt="Auto 1" />
+          <h3>Auto 1 - Toyota Corolla</h3>
+          <p>Precio: $14,500</p>
+          <button onclick="solicitarInfo('Toyota Corolla')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto2.jpg" alt="Auto 2" />
+          <h3>Auto 2 - Honda Civic</h3>
+          <p>Precio: $16,000</p>
+          <button onclick="solicitarInfo('Honda Civic')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto3.jpg" alt="Auto 3" />
+          <h3>Auto 3 - Mazda 3</h3>
+          <p>Precio: $15,200</p>
+          <button onclick="solicitarInfo('Mazda 3')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto4.jpg" alt="Auto 4" />
+          <h3>Auto 4 - Hyundai Elantra</h3>
+          <p>Precio: $13,900</p>
+          <button onclick="solicitarInfo('Hyundai Elantra')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto5.jpg" alt="Auto 5" />
+          <h3>Auto 5 - Nissan Versa</h3>
+          <p>Precio: $12,800</p>
+          <button onclick="solicitarInfo('Nissan Versa')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto6.jpg" alt="Auto 6" />
+          <h3>Auto 6 - Ford Focus</h3>
+          <p>Precio: $13,500</p>
+          <button onclick="solicitarInfo('Ford Focus')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto7.jpg" alt="Auto 7" />
+          <h3>Auto 7 - Volkswagen Jetta</h3>
+          <p>Precio: $14,300</p>
+          <button onclick="solicitarInfo('Volkswagen Jetta')">Solicitar información</button>
+        </div>
+        <div class="auto">
+          <img src="img/auto8.jpg" alt="Auto 8" />
+          <h3>Auto 8 - Chevrolet Cruze</h3>
+          <p>Precio: $13,700</p>
+          <button onclick="solicitarInfo('Chevrolet Cruze')">Solicitar información</button>
+        </div>
+      </div>
+    </section>
+    <section id="agregar-auto" class="seccion">
+  <h2>Agregar Nuevo Auto</h2>
+  <form id="formAuto">
+    <input type="text" id="nombre" placeholder="Nombre del auto" required>
+    <input type="text" id="marca" placeholder="Marca" required>
+    <input type="number" id="anio" placeholder="Año" required>
+    <input type="number" id="precio" placeholder="Precio ($)" required>
+    <input type="file" id="imagen" accept="image/*" required>
+    <button type="submit">Agregar Auto</button>
+  </form>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 El Buen Auto. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="JS/FUNCIONAMIENTO.JS"></script>
+</body>
+</html>
+
+
+
+
